@@ -1,5 +1,5 @@
 var userInput = process.argv.slice(2);
-const qfunction = require("./test_script");
+const qfunction = require("./withKnex");
 
 
 qfunction.runQuery(`SELECT * FROM famous_people WHERE first_name = '${userInput}' OR last_name = '${userInput}'`,
